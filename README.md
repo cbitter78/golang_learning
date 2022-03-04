@@ -29,11 +29,12 @@ Just use Visual Stuidos Code.  You can add the [Go Extension](https://marketplac
 
 ## Package Management
 
-Go modules are the package manager for go.  Its like pip for python.  The nice part is you no longer need to set up a $GOPATH/src folder and work out of there.  You can just keep your projects go.mod file up to date and you are good.  Do read about modules [here](https://go.dev/blog/using-go-modules)
+Go modules are the package manager for go.  Its like pip for python.  The nice part is you no longer need to set up a $GOPATH/src folder and work out of there.  You can just keep your projects go.mod file up to date and you are good.  Do read about modules [here](https://go.dev/blog/using-go-modules) and [here](https://go.dev/ref/mod)
 
 
 ## Helpful links
 
+- [The Go Programming Language Specification](https://go.dev/ref/spec)
 - [Effective Go](https://go.dev/doc/effective_go): A guide to writing golang well.
 - [Go Blog](https://go.dev/blog/): Just AWESOME!
 - [Go Doc (pkg.go.dev)](https://pkg.go.dev/): Docs on the standard lib and other packages.
@@ -42,3 +43,8 @@ Go modules are the package manager for go.  Its like pip for python.  The nice p
 - [Go Forum](https://forum.golangbridge.org/)
 - [Go Playground](https://go.dev/play): A place where you can write and share go code in a web browser.   Super handy to just try somthing out or to share working code with someone.
 - [Go Koans](https://github.com/cdarwin/go-koans): Fun coding exercises in golang
+
+## Notes
+
+[Short variable declarations](https://go.dev/tour/basics/10) is this guy `:=` he is super cute and useful.  It declairs and assigns with an implicit type.
+
