@@ -38,7 +38,7 @@ Go modules are the package manager for go.  Its like pip for python.  The nice p
 - [Effective Go](https://go.dev/doc/effective_go): A guide to writing golang well.
 - [Go Blog](https://go.dev/blog/): Just AWESOME!
 - [Go Doc (pkg.go.dev)](https://pkg.go.dev/): Docs on the standard lib and other packages.
-- [GoLang Docs](https://go.dev/doc/): Offical golang docs.
+- [GoLang Docs](https://pkg.go.dev/): Offical golang docs for the standard lib.
 - [Go by example](https://gobyexample.com/): This site is awesome to see working go code to reinforce how to do somthing or in my case look it up when you have forgotten the syntax.
 - [Go Forum](https://forum.golangbridge.org/)
 - [Go Playground](https://go.dev/play): A place where you can write and share go code in a web browser.   Super handy to just try somthing out or to share working code with someone.
@@ -48,3 +48,6 @@ Go modules are the package manager for go.  Its like pip for python.  The nice p
 
 [Short variable declarations](https://go.dev/tour/basics/10) is this guy `:=` he is super cute and useful.  It declairs and assigns with an implicit type.
 
+## The next course I want to take
+
+[Ultimate Go with Bill Kennedy](https://www.ardanlabs.com/ultimate-go/)
