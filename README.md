@@ -48,6 +48,8 @@ Go modules are the package manager for go.  Its like pip for python.  The nice p
 
 [Short variable declarations](https://go.dev/tour/basics/10) is this guy `:=` he is super cute and useful.  It declairs and assigns with an implicit type.
 
+[Empty Ninja Level go file](https://github.com/cbitter78/golang_learning/blob/830f70d688e0383cb54b9bc4e6216f6bf6937d33/examples/structs/ninja_level5.go)
+
 ## The next course I want to take
 
 [Ultimate Go with Bill Kennedy](https://www.ardanlabs.com/ultimate-go/)
