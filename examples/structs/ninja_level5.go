@@ -11,12 +11,6 @@ func main() {
 	number_two()
 	number_three()
 	number_four()
-	number_five()
-	number_six()
-	number_seven()
-	number_eight()
-	number_nine()
-	number_ten()
 }
 
 func number_one() {
@@ -40,7 +34,7 @@ func number_one() {
 	}
 
 	for i, p := range []person{p1, p2} {
-		fmt.Printf("\t%v: %v %v likes these flavors of ice cream:\n", i, p.last_name, p.last_name)
+		fmt.Printf("\t%v: %v %v likes these flavors of ice cream:\n", i, p.first_name, p.last_name)
 		for _, f := range p.fav_flavor {
 			fmt.Println("\t\t", f)
 		}
@@ -77,7 +71,7 @@ func number_two() {
 	people[p.last_name] = p
 
 	for last_name, p := range people {
-		fmt.Printf("\t%v: %v %v likes these flavors of ice cream:\n", last_name, p.last_name, p.last_name)
+		fmt.Printf("\t%v: %v %v likes these flavors of ice cream:\n", last_name, p.first_name, p.last_name)
 		for _, f := range p.fav_flavor {
 			fmt.Println("\t\t", f)
 		}
@@ -124,34 +118,36 @@ func number_three() {
 	}
 
 	fmt.Println("\t", v)
-	fmt.Println("\t", tundra)
-	fmt.Println("\t", cruse)
+	fmt.Println("\tTundra", tundra)
+	fmt.Println("\tTundra Door Count:", tundra.doors)
+	fmt.Println("\tCurse:", cruse)
+	fmt.Println("\tCruse Door Count:", cruse.doors)
 }
 
 func number_four() {
+	fmt.Println("4: Create and use an anonymous struct with a slice and a map.")
 
-}
+	p := struct {
+		first_name string
+		last_name  string
+		fav_flavor []string
+		todo_list  map[string]string
+	}{
+		first_name: "Bob",
+		last_name:  "Jones",
+		fav_flavor: []string{"chocolate", "cheescake", "rockyroad"},
+		todo_list: map[string]string{
+			"wake up": "5am",
+			"goto":    "gym",
+		},
+	}
 
-func number_five() {
-
-}
-
-func number_six() {
-
-}
-
-func number_seven() {
-
-}
-
-func number_eight() {
-
-}
-
-func number_nine() {
-
-}
-
-func number_ten() {
-
+	fmt.Printf("\t%v %v likes these flavors of ice cream:\n", p.first_name, p.last_name)
+	for _, f := range p.fav_flavor {
+		fmt.Println("\t\t", f)
+	}
+	fmt.Println("\tTodo List:")
+	for k, v := range p.todo_list {
+		fmt.Println("\t\t", k, ": ", v)
+	}
 }
