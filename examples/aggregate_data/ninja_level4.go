@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"strings"
 )
 
 func main() {
@@ -12,6 +13,11 @@ func main() {
 	number_three()
 	number_four()
 	number_five()
+	number_six()
+	number_seven()
+	number_eight()
+	number_nine()
+	number_ten()
 }
 
 func number_one() {
@@ -61,4 +67,88 @@ func number_five() {
 	fmt.Println("\t", s)
 	s = append(s[:3], s[6:]...)
 	fmt.Println("\t", s)
+}
+
+func number_six() {
+
+	fmt.Println("6: Using make to slice up all the states:")
+	s := make([]string, 0, 50)
+	states := []string{` Alabama`, ` Alaska`, ` Arizona`, ` Arkansas`, ` California`, ` Colorado`, ` Connecticut`, `Delaware`, ` Florida`, ` Georgia`, ` Hawaii`, ` Idaho`, ` Illinois`, ` Indiana`, ` Iowa`, ` Kansas`, `Kentucky`, `Louisiana`, ` Maine`, ` Maryland`, ` Massachusetts`, ` Michigan`, ` Minnesota`, `Mississippi`, ` Missouri`, ` Montana`, ` Nebraska`, ` Nevada`, ` New Hampshire`, ` New Jersey`, ` New Mexico`, ` New York`, ` North Carolina`, ` North Dakota`, ` Ohio`, ` Oklahoma`, ` Oregon`, ` Pennsylvania`, ` Rhode Island`, ` South Carolina`, ` South Dakota`, ` Tennessee`, ` Texas`, `Utah`, ` Vermont`, ` Virginia`, ` Washington`, ` West Virginia`, ` Wisconsin`, ` Wyoming`}
+
+	// Because i am lazy I am iterating over the source states to append to my slice
+	for i := 0; i < len(states); i++ {
+		s = append(s, strings.TrimSpace(states[i]))
+		println(i, s, s[i])
+	}
+	fmt.Printf("\tlen:  %v\n", len(s))
+	fmt.Printf("\tcap:  %v\n", len(s))
+	fmt.Printf("\tdata: %v\n", s)
+
+	for i := 0; i < len(s); i++ {
+		fmt.Println("\t", i, s[i])
+	}
+}
+
+func number_seven() {
+	fmt.Println("7: Multi Dimensional Slice:")
+	d := [][]string{
+		{"James", "Bond", "Shaken, not stirred"},
+		{"Miss", "Moneypenny", "Helloooooo, James."},
+	}
+	fmt.Println("\t", d)
+
+	for row_i, row_v := range d {
+		fmt.Println("\tRow: ", row_i)
+		for i, v := range row_v {
+			fmt.Println("\t\t", i, v)
+		}
+	}
+}
+
+func number_eight() {
+	fmt.Println("8: Map of string Slices:")
+	m := map[string][]string{
+		"bond_james":      {`Shaken, not stirred`, `Martinis`, `Cars`},
+		"moneypenny_miss": {`James Bond`, `Literature`, `Computer Science`},
+		"no_dr":           {`Being evil`, `Ice cream`, `Sunsets`},
+	}
+	for row_k, row_v := range m {
+		fmt.Println("\t ", row_k)
+		for i, v := range row_v {
+			fmt.Println("\t\t", i, v)
+		}
+	}
+}
+
+func number_nine() {
+	fmt.Println("9: Map of string Slices and add a record:")
+	m := map[string][]string{
+		"bond_james":      {`Shaken, not stirred`, `Martinis`, `Cars`},
+		"moneypenny_miss": {`James Bond`, `Literature`, `Computer Science`},
+		"no_dr":           {`Being evil`, `Ice cream`, `Sunsets`},
+	}
+	m["me"] = []string{"fun", "games", "dogs"}
+	for row_k, row_v := range m {
+		fmt.Println("\t ", row_k)
+		for i, v := range row_v {
+			fmt.Println("\t\t", i, v)
+		}
+	}
+}
+
+func number_ten() {
+	fmt.Println("10: Map of string Slices and delete a record:")
+	m := map[string][]string{
+		"bond_james":      {`Shaken, not stirred`, `Martinis`, `Cars`},
+		"moneypenny_miss": {`James Bond`, `Literature`, `Computer Science`},
+		"no_dr":           {`Being evil`, `Ice cream`, `Sunsets`},
+	}
+	m["me"] = []string{"fun", "games", "dogs"}
+	delete(m, "bond_james")
+	for row_k, row_v := range m {
+		fmt.Println("\t ", row_k)
+		for i, v := range row_v {
+			fmt.Println("\t\t", i, v)
+		}
+	}
 }
