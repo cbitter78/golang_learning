@@ -94,6 +94,8 @@ func main() {
 	s = append(s, ss...)
 	// This is the same as s = append(s, 610, 987, 1597, 2584, 4181, 6765)
 	// go just Unfurls the elements into the append function.
+	// You should note that ss... will be sent to append as a slice and it
+	// will point to the same underlying array that ss uses.
 	printSlice("s appended to ss", s)
 
 	// Why even make a slice?
