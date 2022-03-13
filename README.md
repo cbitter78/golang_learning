@@ -43,6 +43,9 @@ Go modules are the package manager for go.  Its like pip for python.  The nice p
 - [Go Forum](https://forum.golangbridge.org/)
 - [Go Playground](https://go.dev/play): A place where you can write and share go code in a web browser.   Super handy to just try somthing out or to share working code with someone.
 - [Go Koans](https://github.com/cdarwin/go-koans): Fun coding exercises in golang
+- [Go Style and conventions used by Uber](https://github.com/uber-go/guide/blob/master/style.md#introduction): This is a super useful page for dos and donts.  Well worth a read then a re-read.
+- [Common Go Mistakes when writing loops and go goroutines](https://github.com/golang/go/wiki/CommonMistakes)
+- [Golang code review referance](https://github.com/golang/go/wiki/CodeReviewComments): This is a list of common code review comments left on pull requests for golang.  You can link to each do or do not listed here.  For example so in your reviews you can say somthing like this: "Your error string should not be cap.  See [Error Strings](https://github.com/golang/go/wiki/CodeReviewComments#error-strings)"  This helps others see why and learn.
 
 ## Notes
 
@@ -50,6 +53,12 @@ Go modules are the package manager for go.  Its like pip for python.  The nice p
 
 [Empty Ninja Level go file](https://github.com/cbitter78/golang_learning/blob/830f70d688e0383cb54b9bc4e6216f6bf6937d33/examples/structs/ninja_level5.go)
 
+[How to build your program](https://www.ardanlabs.com/blog/2015/09/composition-with-go.html):  Composition in go with William (Bill) Kennedy
+
 ## The next course I want to take
 
 [Ultimate Go with Bill Kennedy](https://www.ardanlabs.com/ultimate-go/)
+
+## Code Snippits
+
+[Generate Random String 3 Ways](https://go.dev/play/p/mJ1evVtBRnT)
