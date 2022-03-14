@@ -46,6 +46,8 @@ Go modules are the package manager for go.  Its like pip for python.  The nice p
 - [Go Style and conventions used by Uber](https://github.com/uber-go/guide/blob/master/style.md#introduction): This is a super useful page for dos and donts.  Well worth a read then a re-read.
 - [Common Go Mistakes when writing loops and go goroutines](https://github.com/golang/go/wiki/CommonMistakes)
 - [Golang code review referance](https://github.com/golang/go/wiki/CodeReviewComments): This is a list of common code review comments left on pull requests for golang.  You can link to each do or do not listed here.  For example so in your reviews you can say somthing like this: "Your error string should not be cap.  See [Error Strings](https://github.com/golang/go/wiki/CodeReviewComments#error-strings)"  This helps others see why and learn.
+- [Learning Golang with Todd McLeod git Repo](https://github.com/GoesToEleven/GolangTraining):  Todd teaches the [udemy](https://www.udemy.com/course/learn-how-to-code/) corse I started with.  There are some nice examples in his git repo.
+- [Json to Go](https://mholt.github.io/json-to-go/): A tool to take json and generate a struct to marshel it to in go.
 
 ## Notes
 
