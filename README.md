@@ -64,3 +64,14 @@ Go modules are the package manager for go.  Its like pip for python.  The nice p
 ## Code Snippits
 
 [Generate Random String 3 Ways](https://go.dev/play/p/mJ1evVtBRnT)
+
+## Cool Packages
+
+### Logging
+
+- [logrus](https://github.com/sirupsen/logrus): Killer logger that lets you do formatting, colors, and plugins.
+  
+
+### Debuging
+
+- [delve](https://github.com/go-delve/delve): Delve is a debugger for the Go programming language
