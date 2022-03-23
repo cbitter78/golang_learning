@@ -18,9 +18,12 @@ func main() {
 	fmt.Println(y(43))
 	fmt.Println(y(43))
 	b := funkeyer()
-	fmt.Println("--Reset the Closure--")
+	fmt.Println("--Reset the Closure --")
 	fmt.Println(b(43))
 	fmt.Println(b(43))
+	fmt.Println("--Reset the Closure Even Only with Call back --")
+	c := funkeyer()
+	funkeyCallBackOnEven(c)
 }
 
 func funkey() func(i int) {
@@ -35,5 +38,13 @@ func funkeyer() func(i int) string {
 	return func(i int) string {
 		y++
 		return fmt.Sprintln("I am so funkey:", i, y)
+	}
+}
+
+func funkeyCallBackOnEven(x func(i int) string) {
+	for i := 0; i < 10; i++ {
+		if i%2 == 0 {
+			fmt.Println("Even Number:", i, x(43))
+		}
 	}
 }
