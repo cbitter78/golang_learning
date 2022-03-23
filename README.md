@@ -70,6 +70,7 @@ Go modules are the package manager for go.  Its like pip for python.  The nice p
 ### Logging
 
 - [logrus](https://github.com/sirupsen/logrus): Killer logger that lets you do formatting, colors, and plugins.
+- [logrus plugin hook for ElasticSearch](https://github.com/sohlich/elogrus)
   
 
 ### Debuging
