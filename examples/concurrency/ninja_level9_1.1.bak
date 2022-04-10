@@ -1,0 +1,44 @@
+package main
+
+import (
+	"fmt"
+	"sync"
+)
+
+func main() {
+	fmt.Println("Ninja level 9 Exercises 1: Using WaitGroups")
+
+	// I am doing this without global scope because I dislike it.
+	// maybe thats just me ¯\_(ツ)_/¯
+	wg := sync.WaitGroup{}
+
+	go goOne(&wg)
+	go goTwo(&wg)
+
+	wg.Wait()
+
+}
+
+func goOne(wg *sync.WaitGroup) {
+	if wg != nil {
+		wg.Add(1)
+	}
+	for i := 0; i < 10; i++ {
+		fmt.Println("goOne:", i)
+	}
+	if wg != nil {
+		wg.Done()
+	}
+}
+
+func goTwo(wg *sync.WaitGroup) {
+	if wg != nil {
+		wg.Add(1)
+	}
+	for i := 0; i < 10; i++ {
+		fmt.Println("goTwo:", i)
+	}
+	if wg != nil {
+		wg.Done()
+	}
+}
