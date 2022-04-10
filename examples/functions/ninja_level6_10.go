@@ -12,6 +12,11 @@ func main() {
 		fmt.Println("fibonacci #", i, ":\t", fib())
 	}
 
+	fib2 := fibonacci()
+	for i := 0; i < 20; i++ {
+		fmt.Println("fibonacci #", i, ":\t", fib2())
+	}
+
 	c := compound()
 	for i := 0; i < 100; i++ {
 		fmt.Println("compound #", i, ":\t", c(i))

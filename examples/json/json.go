@@ -9,7 +9,7 @@ import (
 // Just use https://mholt.github.io/json-to-go/ and feed it json to get
 // a moce strict
 type Dog struct {
-	Name         string `json:"Name"`
+	Name         string `json:"first_name"`
 	Breed        string `json:"Breed"`
 	Age          int    `json:"Age"`
 	PackLocation string `json:"PackLocation"`
@@ -71,8 +71,10 @@ func marshel_example() {
 		bs = []byte{}
 	}
 
-	bs, _ = prettyprint(bs)
-	fmt.Println("JSON:\n", string(bs))
+	var out bytes.Buffer
+	json.Indent(&out, bs, "", "  ")
+	fmt.Println("JSON:\n", string(out.Bytes()))
+
 }
 
 func prettyprint(b []byte) ([]byte, error) {
