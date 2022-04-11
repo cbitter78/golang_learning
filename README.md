@@ -48,7 +48,9 @@ Go modules are the package manager for go.  Its like pip for python.  The nice p
 - [Golang code review referance](https://github.com/golang/go/wiki/CodeReviewComments): This is a list of common code review comments left on pull requests for golang.  You can link to each do or do not listed here.  For example so in your reviews you can say somthing like this: "Your error string should not be cap.  See [Error Strings](https://github.com/golang/go/wiki/CodeReviewComments#error-strings)"  This helps others see why and learn.
 - [Learning Golang with Todd McLeod git Repo](https://github.com/GoesToEleven/GolangTraining):  Todd teaches the [udemy](https://www.udemy.com/course/learn-how-to-code/) corse I started with.  There are some nice examples in his git repo.
 - [Json to Go](https://mholt.github.io/json-to-go/): A tool to take json and generate a struct to marshel it to in go.
-
+- [Go proverbs](https://go-proverbs.github.io/): A list of sayings by rob pike.  Totally worth a read.
+- [Go Concurrency Patterns](https://www.youtube.com/watch?v=f6kdp27TYZs)
+  
 ## Notes
 
 [Short variable declarations](https://go.dev/tour/basics/10) is this guy `:=` he is super cute and useful.  It declairs and assigns with an implicit type.
