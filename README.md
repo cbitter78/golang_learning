@@ -78,3 +78,8 @@ Go modules are the package manager for go.  Its like pip for python.  The nice p
 ### Debuging
 
 - [delve](https://github.com/go-delve/delve): Delve is a debugger for the Go programming language
+
+
+### Call Stack
+
+Sometimes you want to knwo where you are in the call stack and what file and line of code.  [go-stack](https://pkg.go.dev/github.com/go-stack/stack) can do this.
