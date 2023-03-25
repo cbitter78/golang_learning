@@ -50,6 +50,7 @@ Go modules are the package manager for go.  Its like pip for python.  The nice p
 - [Json to Go](https://mholt.github.io/json-to-go/): A tool to take json and generate a struct to marshel it to in go.
 - [Go proverbs](https://go-proverbs.github.io/): A list of sayings by rob pike.  Totally worth a read.
 - [Go Concurrency Patterns](https://www.youtube.com/watch?v=f6kdp27TYZs)
+- [Encapsulation or Data Hiding in Go](https://aaronzhuo.medium.com/encapsulation-in-go-328c44dcb362)
   
 ## Notes
 
